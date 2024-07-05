@@ -1,0 +1,33 @@
+.sample {
+    overflow:hidden;
+    box-shadow:0 4px 20px rgba(0, 0, 0, 0.2);
+    margin:0 auto;
+    width:100%;
+    height:100%;
+    background-color:#fff;
+}
+
+
+    .sample svg use {
+        fill:#3168dd;
+        /* 10秒かけて繰り返し再生 */
+        animation:wave linear 10s infinite;
+    }
+
+    .sample svg use:nth-of-type(3),
+    .sample svg use:nth-of-type(4) {
+        opacity:0.2;
+        animation-duration:5s;
+    }
+
+/* waveという名前のアニメーションを定義 */
+@keyframes wave {
+    from {
+        /* アニメーションの開始時点では移動させない */
+        transform:translate(0);
+    }
+    to {
+        /* アニメーション終了時点の移動距離 */
+        transform:translate(-100%);
+    }
+}

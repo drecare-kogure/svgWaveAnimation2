@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wave2_animation.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sample">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 300" width="1800" height="300">
+            <defs>
+                <path d="M 0,0 v 100,0 
+                        q 150,50 300,0 t 300,0 
+                        q 150,50 300,0 t 300,0 
+                        q 150,50 300,0 t 300,0 
+                        v 0,-100 Z" id="wave" />
+                <path d="M 1799,0 v 100,0 
+                        q 150,50 300,0 t 300,0 
+                        q 150,50 300,0 t 300,0 
+                        q 150,50 300,0 t 300,0 
+                        v 0,-100 Z" id="connector" />
+            </defs>
+            <use xlink:href="#wave" />
+            <use xlink:href="#connector" />
+            <use xlink:href="#wave" x="-60" />
+            <use xlink:href="#connector" x="-60" />
+        </svg>
+    </div>
+    
+</body>
+</html>
